@@ -48,7 +48,7 @@ The scenario goes through the lifecycle of a car which has the following stages:
 
  1. Vehicle is created as a template by the regulator.
  2. Vehicle template is transferred to the manufacturer.
- 3.  Manufacturer updates the vehicle template to define it as a vehicle giving it a make, model, reg etc.
+ 3. Manufacturer updates the vehicle template to define it as a vehicle giving it a make, model, reg etc.
  4. Manufacturer transfers the vehicle to dealership to be sold.
  5. Dealership transfers the vehicle to a lease company.
  6. Lease company transfers the vehicle to a leasee. The vehicle is not leased instead the application is showing what would happen if the lease were to have come to an end and the leasee activated the purchase option.
@@ -59,3 +59,4 @@ The scenario goes through the lifecycle of a car which has the following stages:
 The demo is built using a 3 tier architecture. The user interacts with the demo using a [web front end](Documentation/Client%20Side.md) that is provided by the NodeJS server in the middle tier. This web front end uses JavaScript to make HTTP requests to the NodeJS server which has an API ([defined here](Documentation/API Methods.md)) which in turn makes calls via HTTP to the HyperLedger fabric to get details about the blockchain and also interact with the [chaincode](Chaincode/src/vehicle_code/vehicles.go). Information on the chaincode interface can be found [here](Documentation/Chaincode Interface.md)
 
 ![Technical Component Model](/Images/Technical_Component_Model.png)
+# invoice-test
